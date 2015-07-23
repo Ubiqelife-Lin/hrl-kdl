@@ -67,8 +67,8 @@ class KDLKinematics(object):
         self.tree = kdl_tree
         self.urdf = urdf
 
-        base_link = base_link.split("/")[-1] # for dealing with tf convention
-        end_link = end_link.split("/")[-1] # for dealing with tf convention
+        #base_link = base_link.split("/")[-1] # for dealing with tf convention
+        #end_link = end_link.split("/")[-1] # for dealing with tf convention
         self.chain = kdl_tree.getChain(base_link, end_link)
         self.base_link = base_link
         self.end_link = end_link
